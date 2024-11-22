@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOXO - Boxing and Footboxing Products</title>
+    <style>
+        body {
+            background-image: url(wp2032110.webp); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif; 
+            margin: 0;
+        }
+        header {
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: 0.1em;
+            color: #ff6b6b;
+        }
+        header p {
+            margin: 5px 0;
+            font-size: 1.2rem;
+        }
+        nav {
+            background-color: #444;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+        nav a:hover {
+            color: #ff6b6b;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: 28%;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h3 {
+            color: #333;
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .product p {
+            color: #666;
+            margin: 5px 0;
+        }
+        .product a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .product a:hover {
+            color: #ff6b6b;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        .product-section {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>LETBOXO</h1>
+        <p>Boxing and Footboxing Products</p>
+    </header>
+
+    <nav>
+        <a onclick="showSection('boxing')">Boxing Products</a>
+        <a onclick="showSection('footboxing')">Footboxing Products</a>
+        <a onclick="showSection('contact')">Contact Us</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- Boxing Products Section -->
+        <section id="boxing" class="product-section">
+            <h2>Boxing Products</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="download87.jpg" alt="Boxing Gloves">
+                    <h3><a href="Boxing-gloves.html">Boxing Gloves</a></h3>
+                    <p>High-quality gloves for training and competitions.</p>
+                    <p>Price: $50</p>
+                </div>
+                <div class="product">
+                    <img src="istockphoto-497936468-612x612.jpg" alt="Boxing Bag">
+                    <h3><a href="Punching-bag.html">Boxing Bag</a></h3>
+                    <p>Durable and perfect for heavy training.</p>
+                    <p>Price: $150</p>
+                </div>
+                <div class="product">
+                    <img src="7853.jpg" alt="Boxing Headgear">
+                    <h3><a href="Headgear.html">Boxing Headgear</a></h3>
+                    <p>Protective headgear for safe sparring sessions.</p>
+                    <p>Price: $60</p>
+                </div>
+                <div class="product">
+                    <img src="jk.jpg" alt="Hand Wraps">
+                    <h3><a href="Hand-wraps.html">Hand Wraps</a></h3>
+                    <p>Comfortable and durable hand wraps for extra protection.</p>
+                    <p>Price: $15</p>
+                </div>
+                <div class="product">
+                    <img src="kl.jpg" alt="Punching Mitt">
+                    <h3><a href="Punching-mitt.html">Punching Mitt</a></h3>
+                    <p>Great for improving accuracy and speed.</p>
+                    <p>Price: $40</p>
+                </div>
+                <div class="product">
+                    <img src="j.webp" alt="Boxing Shoes">
+                    <h3><a href="Boxing-shoes.html">Boxing Shoes</a></h3>
+                    <p>Lightweight and supportive boxing shoes.</p>
+                    <p>Price: $80</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footboxing Products Section -->
+        <section id="footboxing" class="product-section">
+            <h2>Footboxing Products</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="footboxing-shoes.jpg" alt="Footboxing Shoes">
+                    <h3><a href="footboxing-shoes.html">Footboxing Shoes</a></h3>
+                    <p>Lightweight and durable shoes for footboxing.</p>
+                    <p>Price: $75</p>
+                </div>
+                <div class="product">
+                    <img src="footboxing-pads.jpg" alt="Footboxing Pads">
+                    <h3><a href="footboxing-pads.html">Footboxing Pads</a></h3>
+                    <p>Protective pads for safe training sessions.</p>
+                    <p>Price: $40</p>
+                </div>
+                <div class="product">
+                    <img src="shin-guards.jpg" alt="Shin Guards">
+                    <h3><a href="shin-guards.html">Shin Guards</a></h3>
+                    <p>High-quality shin guards for protection during training.</p>
+                    <p>Price: $55</p>
+                </div>
+                <div class="product">
+                    <img src="ankle-support.jpg" alt="Ankle Support">
+                    <h3><a href="ankle-support.html">Ankle Support</a></h3>
+                    <p>Stabilize your ankles with these supports.</p>
+                    <p>Price: $25</p>
+                </div>
+                <div class="product">
+                    <img src="kick-shield.jpg" alt="Kick Shield">
+                    <h3><a href="kick-shield.html">Kick Shield</a></h3>
+                    <p>Perfect for powerful kicks during training.</p>
+                    <p>Price: $65</p>
+                </div>
+                <div class="product">
+                    <img src="footboxing-gloves.jpg" alt="Footboxing Gloves">
+                    <h3><a href="footboxing-gloves.html">Footboxing Gloves</a></h3>
+                    <p>Specially designed gloves for footboxing.</p>
+                    <p>Price: $45</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="product-section">
+            <h2>Contact Us</h2>
+            <p>For any queries or support, please email us at <a href="mailto:support@letboxo.com">support@letboxo.com</a></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LETBOXO. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.product-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+        showSection('boxing');
+    </script>
+</body>
+</html>
